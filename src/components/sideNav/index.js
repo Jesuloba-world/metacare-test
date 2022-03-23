@@ -1,10 +1,11 @@
 import { SideNavContainer } from "./sidenav.style";
-import { Header } from "./components";
+import { Header, Links } from "./components";
 
 export const SideNav = () => {
 	return (
 		<SideNavContainer>
 			<Header />
+			<Links />
 		</SideNavContainer>
 	);
 };
