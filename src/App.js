@@ -1,10 +1,12 @@
-import { pageContainer } from "./container/pageContainer";
+import { PageContainer } from "./container/pageContainer";
+import { SideNav } from "./components";
 
 function App() {
 	return (
-		<pageContainer>
+		<PageContainer>
+			<SideNav />
 			<h1>Hello world!!</h1>
-		</pageContainer>
+		</PageContainer>
 	);
 }
 

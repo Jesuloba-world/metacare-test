@@ -14,3 +14,10 @@ export const GlobalStyle = styled`
     font-family: 'Gelion', sans-serif;
   }
 `;
+
+export const theme = {
+	white: "#fff",
+	black: "#060213",
+	bluishGrey: "#696D8C",
+	lightGrey: "#ECEBF5",
+};
