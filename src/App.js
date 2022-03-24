@@ -1,11 +1,13 @@
 import { PageContainer } from "./container/pageContainer";
-import { SideNav } from "./components";
+import { SideNav, Header } from "./components";
 
 function App() {
 	return (
 		<PageContainer>
 			<SideNav />
-			<h1>Hello world!!</h1>
+			<div style={{ width: "100%" }}>
+				<Header />
+			</div>
 		</PageContainer>
 	);
 }
