@@ -22,4 +22,5 @@ export const theme = {
 	lightGrey: "#ECEBF5",
 	purple: "#6837EF",
 	lighterGrey: "#fafafc",
+	red: "#f25a68",
 };
