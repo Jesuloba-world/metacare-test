@@ -20,3 +20,12 @@ export const TextNormalLink = styled.p`
 	line-height: 24px;
 	color: inherit;
 `;
+
+export const TextBigBold = styled.h2`
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 160%;
+	display: flex;
+	align-items: center;
+	color: ${({ theme }) => theme.black};
+`;

@@ -18,7 +18,7 @@ export const Input = styled.input`
 	line-height: 29px;
 
 	&::placeholder {
-		color: #a3a3c2;
+		color: ${({ theme }) => theme.darkGrey};
 	}
 
 	&:focus {

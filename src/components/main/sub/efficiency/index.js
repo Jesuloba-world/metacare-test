@@ -1,5 +1,10 @@
 import { Container } from "./efficiency.style";
+import { Header } from "./subcomponent";
 
 export const Efficiency = () => {
-	return <Container>This is the Efficiency tab</Container>;
+	return (
+		<Container>
+			<Header />
+		</Container>
+	);
 };
