@@ -1,5 +1,5 @@
 import { PageContainer } from "./container/pageContainer";
-import { SideNav, Header, TabSection } from "./components";
+import { SideNav, Header, TabSection, MainSection } from "./components";
 
 function App() {
 	return (
@@ -8,6 +8,7 @@ function App() {
 			<div style={{ width: "100%" }}>
 				<Header />
 				<TabSection />
+				<MainSection />
 			</div>
 		</PageContainer>
 	);

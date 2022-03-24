@@ -20,10 +20,11 @@ export const TabSection = () => {
 		<Container>
 			{tabs.map((tab, index) => (
 				<TabContainer
+					key={index}
 					active={tab.active}
 					onClick={() => setTabActive(tab.name)}
 				>
-					<TextNormalLink key={index}>{tab.name}</TextNormalLink>
+					<TextNormalLink>{tab.name}</TextNormalLink>
 				</TabContainer>
 			))}
 		</Container>
