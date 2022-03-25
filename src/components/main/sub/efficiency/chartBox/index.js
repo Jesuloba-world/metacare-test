@@ -35,6 +35,14 @@ export const ChartBox = ({ title, average, color, data, labels }) => {
 		setWidth(ref.current.clientWidth);
 	}, []);
 
+	const mean = Math.round(
+		data
+			.map((el) => el.value)
+			.reduce((a, b) => {
+				return a + b;
+			}, 0) / data.length
+	);
+
 	return (
 		<Container>
 			<ChartSpace>
@@ -77,13 +85,15 @@ export const ChartBox = ({ title, average, color, data, labels }) => {
 				<ExtraFrame>
 					<div>
 						<Text14Grey>{average}</Text14Grey>
-						<TextMidBold>30 Mins</TextMidBold>
+						<TextMidBold>{mean} Mins</TextMidBold>
+						{/* I don't understand why we use Mins for every average */}
 					</div>
 				</ExtraFrame>
 				<ExtraFrame>
 					<div>
 						<Text14Grey>Response Time</Text14Grey>
 						<TextMidBold>1 Hour 30 Mins</TextMidBold>
+						{/* How do we even calculate Response Time */}
 					</div>
 				</ExtraFrame>
 			</Extra>
