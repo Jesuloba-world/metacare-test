@@ -7,6 +7,10 @@ export const TextSmallDark = styled.p`
 	color: ${({ theme }) => theme.black};
 `;
 
+export const TextSmallDarkBold = styled(TextSmallDark)`
+	font-weight: 500;
+`;
+
 export const TextSmallGrey = styled.p`
 	font-weight: 400;
 	font-size: 12px;
@@ -21,11 +25,16 @@ export const TextNormalLink = styled.p`
 	color: inherit;
 `;
 
-export const TextBigBold = styled.h2`
+export const TextBigBold = styled.h1`
 	font-weight: 600;
 	font-size: 24px;
 	line-height: 160%;
-	display: flex;
-	align-items: center;
+	color: ${({ theme }) => theme.black};
+`;
+
+export const TextNormalBold = styled.h2`
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 26px;
 	color: ${({ theme }) => theme.black};
 `;
