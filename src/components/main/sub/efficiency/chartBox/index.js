@@ -25,7 +25,7 @@ import {
 import { ReactComponent as Calendar } from "../../../../../assets/calendar.svg";
 import { Chart } from "./chart";
 
-export const ChartBox = ({ title, average, color, data }) => {
+export const ChartBox = ({ title, average, color, data, labels }) => {
 	const [height, setHeight] = useState(0);
 	const [width, setWidth] = useState(0);
 	const ref = useRef(null);
@@ -69,6 +69,7 @@ export const ChartBox = ({ title, average, color, data }) => {
 						color={color}
 						height={height}
 						width={width}
+						labels={labels}
 					/>
 				</ChartContainer>
 			</ChartSpace>

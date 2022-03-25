@@ -14,6 +14,7 @@ export const Efficiency = () => {
 						color={el.color}
 						data={el.data}
 						average={el.average}
+						labels={el.labels}
 					/>
 				))}
 			</ChartContainer>
