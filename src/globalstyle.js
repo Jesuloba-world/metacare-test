@@ -17,6 +17,7 @@ export const GlobalStyle = styled`
 
 export const theme = {
 	white: "#fff",
+	darkWhite: "#fafafa",
 	black: "#060213",
 	bluishGrey: "#696D8C",
 	grey: "#E1E1EB",

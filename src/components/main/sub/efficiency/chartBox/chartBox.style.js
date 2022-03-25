@@ -21,12 +21,34 @@ export const ChartSpace = styled.div`
 export const Extra = styled.div`
 	height: 100%;
 	width: 235px;
+	padding-inline: 24px;
 	border-left: 1px solid ${({ theme }) => theme.lightGrey};
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 18px;
+`;
+
+export const ExtraFrame = styled.div`
+	width: 187px;
+	height: 116px;
+	background: ${({ theme }) => theme.darkWhite};
+	display: flex;
+	align-items: center;
+	padding-left: 16px;
+
+	div {
+		p {
+			margin-bottom: 8px;
+		}
+	}
 `;
 
 export const ChartHead = styled.div`
 	display: flex;
 	justify-content: space-between;
+	margin-bottom: 24px;
 `;
 
 export const ChartHeadLHS = styled.div`
@@ -94,7 +116,8 @@ export const LineBetween = styled.div`
 `;
 
 export const ChartContainer = styled.div`
-	width: 100%;
+	max-width: 100%;
 	height: 100%;
-	background-color: cornflowerblue;
+	display: flex;
+	background-color: darkgreen;
 `;

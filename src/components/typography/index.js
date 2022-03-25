@@ -11,6 +11,10 @@ export const TextSmallDarkBold = styled(TextSmallDark)`
 	font-weight: 500;
 `;
 
+export const Text14Grey = styled(TextSmallDark)`
+	color: ${({ theme }) => theme.bluishGrey};
+`;
+
 export const TextSmallGrey = styled.p`
 	font-weight: 400;
 	font-size: 12px;
@@ -37,4 +41,8 @@ export const TextNormalBold = styled.h2`
 	font-size: 18px;
 	line-height: 26px;
 	color: ${({ theme }) => theme.black};
+`;
+
+export const TextMidBold = styled(TextBigBold)`
+	font-size: 20px;
 `;
